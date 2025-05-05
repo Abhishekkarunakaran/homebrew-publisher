@@ -5,21 +5,21 @@
 class Ub2 < Formula
   desc ""
   homepage ""
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.0/ub2_Darwin_x86_64.tar.gz"
-      sha256 "164139385549cda501f7a6f1792be1ef21b1ea7765e9d0216924250489f92738"
+      url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.1/ub2_Darwin_x86_64.tar.gz"
+      sha256 "a517119cab59e0eb483d9309e3314395d999966db41c43dd1d935c1f2cac3abf"
 
       def install
         bin.install "ub2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.0/ub2_Darwin_arm64.tar.gz"
-      sha256 "b88721ec80c589d4acf29bebd2b0effd9cbcbc166bb671fad10ace8b34376e09"
+      url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.1/ub2_Darwin_arm64.tar.gz"
+      sha256 "9b1c3cd4b59c277cc0ba0c0bb27836d96ec5d2685377445af51abc9c0242e2dd"
 
       def install
         bin.install "ub2"
@@ -30,8 +30,8 @@ class Ub2 < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.0/ub2_Linux_x86_64.tar.gz"
-        sha256 "9e9e9e090c3d5c137cbfe9a6efc5620de79224b713eba787bef3f67a9401db56"
+        url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.1/ub2_Linux_x86_64.tar.gz"
+        sha256 "b843ce74023e9635b0a73437c90207d9db21729b57262e609cdc530b9a8ccc62"
 
         def install
           bin.install "ub2"
@@ -40,8 +40,8 @@ class Ub2 < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.0/ub2_Linux_arm64.tar.gz"
-        sha256 "f881cb49365dee98e7674acab19e0675dcb04d9400ddf24e46be409c318e82f5"
+        url "https://github.com/Abhishekkarunakaran/ub2/releases/download/v1.2.1/ub2_Linux_arm64.tar.gz"
+        sha256 "d236e41bf71e3749a28592eed41a9fda1e13bbc18db4e12a31a747112e644c37"
 
         def install
           bin.install "ub2"
